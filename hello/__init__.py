@@ -10,4 +10,6 @@ def main(global_config, **settings):
     config.add_route('home2', '/home2')
     config.add_route('hello2', '/hello2')
     config.scan('.views')
+    config.add_route('api', '/api/*traverse')
+    config.scan('.apis')
     return config.make_wsgi_app()
