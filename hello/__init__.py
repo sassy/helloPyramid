@@ -9,7 +9,6 @@ def main(global_config, **settings):
     config.add_route('hello', '/')
     config.add_route('home', '/home')
     config.add_route('home2', '/home2')
-    config.add_route('home3', '/home3')
     config.scan('.views')
     config.add_route('api', '/api/*traverse')
     config.scan('.apis')
